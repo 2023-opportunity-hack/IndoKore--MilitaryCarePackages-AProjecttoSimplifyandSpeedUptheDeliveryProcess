@@ -27,18 +27,23 @@ Frontend | HTML, JavaScript, React, CSS
 Database backend | Fire Base
 JavaScript framework | React
 Repository | Github
-
-## Overall Architecture
-
-
-## Database Scheme
-
+Authentication | Firebase Auth
 
 ## Challenges
-
+- Tight timeline - The hackathon format meant all development had to be completed very quickly, which limited the overall scope and resulted in taking some shortcuts.
+- Learning new technologies - Some team members had to learn new frameworks like React and Firebase on the fly during the project. The initial learning curve reduced productivity.
+- Scope creep - Adding too many features resulted in some half-finished functionality rather than polished core features. Better scoping would have helped.
+- Complex workflows - Some processes like inventory management and shipping had complex workflows that were difficult to fully implement within the timeline.
+- Styling debt - Focus on functionality left styling and polish until late, resulting in inconsistent UI.
+- Technical debt - Tight deadline led to cutting some corners in code quality that need to be paid down.
+- Feature creep - Ideas for new features kept getting added late into development, stretching our resources.
 
 ## Future Enchacements
-
+Incorporate additional shipping carrier integrations beyond USPS
+Develop a mobile app version of the interface using React Native
+Add user roles and permissions to restrict access to certain app features
+Enable photo upload for inventory items and shipments
+Build out customer profiles with order history and user settings
 
 ## Creator
 - @Adam Nugroho
