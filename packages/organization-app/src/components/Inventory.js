@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import './styles/Inventory.css';
 import Navbar from './Navbar';
 import db from '../firebase';
+import Modal from './Modal';
 
 function Inventory() {
 /*
@@ -48,6 +49,8 @@ function Inventory() {
 */
 
 const [items, setItems] = useState([]);
+const [showModal, setShowModal] = useState(false);
+
 
 useEffect(() => {
   const unsubscribe = db.collection('inventory')
@@ -87,29 +90,40 @@ useEffect(() => {
         </div>
       ))}
 
-{/* <button onClick={() => setShowModal(true)}>Add Item</button>
-{showModal && (
+<>
+      <button onClick={() => setShowModal(true)}>Add Item</button> 
+
+      {showModal && (
         <Modal>
-          <form
-            onSubmit={e => {
-              e.preventDefault();
-              addItem(getFormData());
-              setShowModal(false);
-            }}
-          >
+          <form>
             <label>
               Name:
-              <input name="name"/> 
+              <input name="itemName" />
             </label>
 
-            // other inputs 
+            <label>
+              Quantity:
+              <input name="quantity" type="number" />
+            </label>
 
-            <button type="submit">Add</button>
+            <label>
+              Demand:
+              <input name="demand" type="number" />
+            </label>
+
+            <label>
+              Type:
+              <input name="type" type="string" />
+            </label>
+            <button type="submit">Add Item</button>
           </form>
         </Modal>
-      )} */}
+      )}
+    </>
     </div>
+    
   );
+
 
 
 
