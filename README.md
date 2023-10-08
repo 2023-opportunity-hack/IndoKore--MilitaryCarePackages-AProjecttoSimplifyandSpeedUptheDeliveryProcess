@@ -10,6 +10,12 @@ IndoKore
 ## Introduction
 Being able to give back to the incredible family that has been protecting our country is a wonderful thing to do. Blue Star Mothers of Maricopa AZ 7 is a non-profit organization that has been sending care packages to deployed military members. Behind the incredible work they have done, Blue Star has been facing several difficulties that could limit and impact the kindness that they want to spread, and that is why we have come up with solutions to their problems.
 
+We created two different web apps for Blue Star and the customer. 
+
+Blue Star web app: https://blue-star.web.app/ 
+
+Customer web app: https://blue-star-mothers.web.app/
+
 ## Problem Statement
 [Military Care Packages: A Project to Simplify and Speed Up the Delivery Process](https://ohack.dev/project/Ng1joCkd2fSiOwAVmEOW)
 
