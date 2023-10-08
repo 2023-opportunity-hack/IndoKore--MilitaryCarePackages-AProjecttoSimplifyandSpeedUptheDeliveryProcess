@@ -1,0 +1,37 @@
+/* Timeline.css */
+
+.timeline {
+    position: relative;
+  }
+  
+  .timeline-item {
+    padding-bottom: 40px;
+    position: relative;
+  } 
+  
+
+  .timeline-dot {
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 50%;
+    position: absolute;
+    left: -7px;
+    top: 0;
+  }
+  
+  .timeline-date {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 10px 25px;
+  }
+  
+  .timeline-content {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    padding: 15px;
+    border-radius: 5px;
+    background: #fff;
+    position: relative;
+    margin-left: 25px;
+  }
