@@ -108,9 +108,10 @@ useEffect(() => {
           </form>
         </Modal>
       )} */}
-
     </div>
   );
+
+
 
 }
 export default Inventory;
