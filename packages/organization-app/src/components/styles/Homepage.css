@@ -12,5 +12,53 @@
     font-size: 24px;
   
     margin: 20px;
-  }
+}
 
+/* Homepage.css */
+
+.homepage-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.homepage-header {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-family: "Suez One", Helvetica;
+  font-size: 150px;
+  font-weight: 400;
+  mix-blend-mode: darken;
+  text-align: center;
+  top: 109px;
+  white-space: nowrap;
+}
+
+.homepage-header h1 {
+  font-size: 24px;
+  color: #990303;
+}
+.homepage-header h2 {
+  font-size: 48px;
+}
+.homepage-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.homepage-button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.homepage-button:hover {
+  background-color: #0056b3;
+}

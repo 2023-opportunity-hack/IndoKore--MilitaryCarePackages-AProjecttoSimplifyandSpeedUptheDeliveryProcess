@@ -200,7 +200,7 @@ function Customers() {
       <table>
         <thead>
           <tr>
-            <th>ID</th>
+            <th>Email</th>
             <th>First Name</th>
             <th>Last Name</th>
             <th>Military Branch</th>
@@ -214,7 +214,7 @@ function Customers() {
         <tbody>
           {customers.map(customer => (
             <tr key={customer.id}>
-              <td>{customer.id}</td>
+              <td>{customer.email}</td>
               <td>{customer.firstName}</td>
               <td>{customer.lastName}</td>
               <td>{customer.branch}</td>
