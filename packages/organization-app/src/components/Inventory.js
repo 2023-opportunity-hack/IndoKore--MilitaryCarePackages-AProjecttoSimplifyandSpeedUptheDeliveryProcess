@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import './styles/Inventory.css';
 import Navbar from './Navbar';
 import db from '../firebase';
+import Modal from './Modal';
 
 function Inventory() {
 /*
@@ -48,6 +49,38 @@ function Inventory() {
 */
 
 const [items, setItems] = useState([]);
+const [showModal, setShowModal] = useState(false);
+
+function handleFormSubmit(event) {
+  event.preventDefault();  // Prevents the default form submission behavior
+
+  const form = event.target;
+  const itemName = form.itemName.value;
+  const quantity = form.quantity.value;
+  const demand = form.demand.value;
+  const type = form.type.value;
+  
+  addItem(itemName, quantity, demand, type);
+
+  form.reset();  // Clears the form fields
+}
+
+function addItem(itemName, quantity, demand, type) {
+  db.collection('inventory').add({
+    itemName,
+    quantity: parseInt(quantity, 10),  // Convert quantity to a number
+    demand: parseInt(demand, 10),  // Convert demand to a number
+    type
+  })
+  .then((docRef) => {
+    console.log("Document written with ID: ", docRef.id);
+    setShowModal(false);  // Close the modal after successful addition
+  })
+  .catch((error) => {
+    console.error("Error adding document: ", error);
+  });
+}
+
 
 useEffect(() => {
   const unsubscribe = db.collection('inventory')
@@ -87,29 +120,40 @@ useEffect(() => {
         </div>
       ))}
 
-{/* <button onClick={() => setShowModal(true)}>Add Item</button>
-{showModal && (
+<>
+      <button onClick={() => setShowModal(true)}>Add Item</button> 
+
+      {showModal && (
         <Modal>
-          <form
-            onSubmit={e => {
-              e.preventDefault();
-              addItem(getFormData());
-              setShowModal(false);
-            }}
-          >
+          <form onSubmit={handleFormSubmit}>
             <label>
               Name:
-              <input name="name"/> 
+              <input name="itemName" />
             </label>
 
-            // other inputs 
+            <label>
+              Quantity:
+              <input name="quantity" type="number" />
+            </label>
 
-            <button type="submit">Add</button>
+            <label>
+              Demand:
+              <input name="demand" type="number" />
+            </label>
+
+            <label>
+              Type:
+              <input name="type" type="string" />
+            </label>
+            <button type="submit">Add Item</button>
           </form>
         </Modal>
-      )} */}
+      )}
+    </>
     </div>
+    
   );
+
 
 
 
