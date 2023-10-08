@@ -37,6 +37,49 @@ function Shipments() {
  // const [shipments, setShipments] = useState(shipmentsArr);
  const [shipments, setShipments] = useState([]);
 
+ const [selectedShipments, setSelectedShipments] = useState([]);
+
+ function handleCheckboxChange(shipment) {
+  setSelectedShipments(prevSelected => {
+      if (prevSelected.includes(shipment)) {
+          return prevSelected.filter(s => s !== shipment);
+      } else {
+          return [...prevSelected, shipment];
+      }
+  });
+}
+
+function generateCSV() {
+  // Ensure there are selected shipments before proceeding
+  if (selectedShipments.length === 0) {
+      alert('No shipments selected');
+      return;
+  }
+
+  // Exclude the 'id' field from headers
+  const headers = Object.keys(selectedShipments[0]).filter(key => key !== 'id').join(',');
+  
+  // Map over the selected shipments to create an array of row strings,
+  // excluding the 'id' value from each shipment
+  const rows = selectedShipments.map(shipment => {
+      const filteredValues = Object.keys(shipment)
+          .filter(key => key !== 'id')
+          .map(key => shipment[key]);
+      return filteredValues.join(',');
+  });
+  
+  const csvString = `${headers}\n${rows.join('\n')}`;
+  const blob = new Blob([csvString], { type: 'text/csv;charset=utf-8;' });
+  const link = document.createElement('a');
+  const url = URL.createObjectURL(blob);
+  link.setAttribute('href', url);
+  link.setAttribute('download', 'selected_shipments.csv');
+  link.style.visibility = 'hidden';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
  useEffect(() => {
     const unsubscribe = db.collection('customers')
       .onSnapshot(snapshot => {
@@ -102,16 +145,21 @@ function Shipments() {
               <td>{s.serviceType}</td>
               <td>{s.weight}</td>
               <td>
-                <input type="checkbox" />
+              <input 
+                type="checkbox" 
+                onChange={() => handleCheckboxChange(s)} 
+                value={selectedShipments.includes(s)} 
+              />
               </td>
             </tr>
           ))}
         </tbody>
       </table>
 
-      <button className="generate-label-btn">
-        Generate Label
+      <button className="generate-label-btn" onClick={generateCSV}>
+        Generate CSV
       </button>
+
 
     </div>
   );
