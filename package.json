@@ -12,5 +12,8 @@
   "scripts": {
     "start:organization": "yarn workspace organization-app start",
     "start:customer": "yarn workspace customer-input-app start"
+  },
+  "dependencies": {
+    "firebase": "^10.4.0"
   }
 }
