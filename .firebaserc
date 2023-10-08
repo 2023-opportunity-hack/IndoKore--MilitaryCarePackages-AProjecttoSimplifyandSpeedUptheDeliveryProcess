@@ -5,11 +5,11 @@
   "targets": {
     "blue-star-mothers": {
       "hosting": {
-        "customer": [
-          "packages/customer-input-app"
-        ],
         "organization": [
-          "packages/organization-app"
+          "blue-star"
+        ],
+        "customer": [
+          "blue-star-mothers"
         ]
       }
     }

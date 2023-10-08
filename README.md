@@ -17,6 +17,7 @@ Being able to give back to the incredible family that has been protecting our co
 Purpose | Technologies
 --- | ---
 Design prototyping | Figma
+Frontend | HTML, JavaScript, React, CSS
 Database backend | Fire Base
 JavaScript framework | React
 Repository | Github

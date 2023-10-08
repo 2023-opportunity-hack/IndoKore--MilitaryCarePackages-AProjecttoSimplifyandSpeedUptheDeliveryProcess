@@ -8,8 +8,8 @@ admin.initializeApp();
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "your-email@gmail.com",
-    pass: "your-email-password",
+    user: "fawwazfirdaus7@gmail.com",
+    pass: "Firdaus_alphabet7",
   },
 });
 
@@ -25,13 +25,14 @@ exports.sendEmails = functions.https.onCall(async (data, context) => {
   const snapshot = await admin.firestore().collection("customers").get();
   const emails = snapshot.docs.map((doc) => doc.data().email);
   const mailOptions = {
-    from: "your-email@gmail.com",
+    from: "fawwazfirdaus7@gmail.com",
     to: emails.join(","),
     subject: "Update Your Personal Info",
     text: "Please update your personal information at https://blue-star-mothers.web.app/",
   };
   try {
     await transporter.sendMail(mailOptions);
+    console.log("Email sent successfully"); // Log success
     return {success: true};
   } catch (error) {
     console.error("There was an error while sending the email:", error);
