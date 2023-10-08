@@ -15,8 +15,13 @@ const EmailButton = () => {
     }
   };
 
+  function handleClick() {
+    sendEmails();
+    alert('You have sent emails to all customers!');
+  }
+
   return (
-    <button onClick={sendEmails}>Send Emails</button>
+    <button onClick={handleClick}>Send Emails</button>
   );
 };
 

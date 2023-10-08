@@ -1,11 +1,9 @@
-/* Timeline.css */
-
 .timeline {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
+  width: calc(100% - 100px);
 }
 
 .timeline .text-wrapper {
@@ -14,7 +12,7 @@
   font-size: 50px;
   font-weight: 400;
   height: 74px;
-  left: 853px;
+  left: 753px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
@@ -27,7 +25,7 @@
   left: 162px;
   position: absolute;
   top: 148px;
-  width: 1718px;
+  width: 1618px;
 }
 
 .timeline .overlap-group {
@@ -43,7 +41,7 @@
   left: 0;
   object-fit: cover;
   position: absolute;
-  top: 455px;
+  top: 40%;
   width: 370px;
 }
 
@@ -55,14 +53,7 @@
   width: 1700px;
 }
 
-.timeline .restock-items-before {
-  align-items: center;
-  display: inline-flex;
-  flex-direction: column;
-  left: 842px;
-  position: absolute;
-  top: 0;
-}
+
 
 .timeline .frame {
   align-items: flex-start;
@@ -119,15 +110,7 @@
   top: 10px;
 }
 
-.timeline .last-day-to-update {
-  align-items: center;
-  display: inline-flex;
-  flex-direction: column;
-  gap: 4px;
-  left: 426px;
-  position: absolute;
-  top: 30px;
-}
+
 
 .timeline .frame-2 {
   align-items: center;
@@ -164,15 +147,7 @@
   width: fit-content;
 }
 
-.timeline .prepare-packages {
-  align-items: center;
-  display: inline-flex;
-  flex-direction: column;
-  gap: 10px;
-  left: 1374px;
-  position: absolute;
-  top: 67px;
-}
+
 
 .timeline .frame-3 {
   align-items: center;
@@ -201,9 +176,58 @@
   display: inline-flex;
   flex-direction: column;
   gap: 19px;
-  left: 0;
+  left: 1%;
   position: absolute;
   top: 85px;
+}
+
+.timeline .last-day-to-update {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+  left: 20%;
+  position: absolute;
+  top: 30px;
+}
+
+.timeline .restock-items-before {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  left: 40%;
+  position: absolute;
+  top: 0;
+}
+
+.timeline .prepare-packages {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  left: 68%;
+  position: absolute;
+  top: 100px;
+}
+
+.timeline .ship-through-usps {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 16px;
+  left: 27%;
+  position: absolute;
+  top: -50%;
+}
+
+.timeline .order-arrived {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 16px;
+  left: -19%;
+  position: absolute;
+  top: -50%;
 }
 
 .timeline .frame-4 {
@@ -214,42 +238,11 @@
   position: relative;
 }
 
-.timeline .line {
-  height: 4px;
-  left: 658px;
-  object-fit: cover;
-  position: absolute;
-  top: 240px;
-  width: 366px;
-}
 
-.timeline .img {
-  height: 4px;
-  left: 1124px;
-  object-fit: cover;
-  position: absolute;
-  top: 250px;
-  width: 363px;
-}
 
-.timeline .line-2 {
-  height: 358px;
-  left: 1537px;
-  object-fit: cover;
-  position: absolute;
-  top: 310px;
-  width: 3px;
-  
-}
 
-.timeline .line-3 {
-  height: 4px;
-  left: 185px;
-  object-fit: cover;
-  position: absolute;
-  top: 226px;
-  width: 372px;
-}
+
+
 
 .timeline .overlap-2 {
   height: 224px;
@@ -259,15 +252,7 @@
   width: 778px;
 }
 
-.timeline .ship-through-usps {
-  align-items: center;
-  display: inline-flex;
-  flex-direction: column;
-  gap: 16px;
-  left: 420px;
-  position: absolute;
-  top: 0;
-}
+
 
 .timeline .frame-5 {
   align-items: center;
@@ -278,21 +263,50 @@
   position: relative;
 }
 
-.timeline .order-arrived {
-  align-items: center;
-  display: inline-flex;
-  flex-direction: column;
-  gap: 16px;
-  left: 5px;
+
+
+.timeline .line-3 {
+  height: 4px;
+  left: 200px;
+  object-fit: cover;
   position: absolute;
-  top: 7px;
+  top: 240px;
+  width: 270px;
+}
+
+.timeline .line {
+  height: 4px;
+  left: 570px;
+  object-fit: cover;
+  position: absolute;
+  top: 240px;
+  width: 290px;
+}
+
+.timeline .img {
+  height: 4px;
+  left: 960px;
+  object-fit: cover;
+  position: absolute;
+  top: 245px;
+  width: 310px;
+}
+
+.timeline .line-2 { 
+  height: 300px;
+  left: 1320px;
+  object-fit: cover;
+  position: absolute;
+  top: 302px;
+  width: 3px;
+  
 }
 
 .timeline .line-4 {
-  height: 4px;
-  left: 173px;
+  height: 5px;
+  left: 20px;
   object-fit: cover;
   position: absolute;
-  top: 60px;
-  width: 363px;
+  top: -50px;
+  width: 313px;
 }
