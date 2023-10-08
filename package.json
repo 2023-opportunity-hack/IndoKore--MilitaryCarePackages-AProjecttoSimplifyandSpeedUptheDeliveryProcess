@@ -6,11 +6,11 @@
   "author": "Fawwaz Firdaus <fawwazfirdaus7@gmail.com>",
   "license": "MIT",
   "private": true,
-  "workspaces": ["packages/*"],
-
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "start:organization": "yarn workspace organization-app start",
     "start:customer": "yarn workspace customer-input-app start"
   }
 }
-
