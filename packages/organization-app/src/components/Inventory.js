@@ -87,7 +87,7 @@ useEffect(() => {
         </div>
       ))}
 
-<button onClick={() => setShowModal(true)}>Add Item</button>
+{/* <button onClick={() => setShowModal(true)}>Add Item</button>
 {showModal && (
         <Modal>
           <form
@@ -107,7 +107,7 @@ useEffect(() => {
             <button type="submit">Add</button>
           </form>
         </Modal>
-      )}
+      )} */}
 
     </div>
   );
