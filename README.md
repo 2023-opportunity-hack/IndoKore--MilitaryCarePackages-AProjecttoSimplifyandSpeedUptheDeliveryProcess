@@ -4,6 +4,33 @@ https://hack.ohack.dev
 ## Team
 IndoKore
 
+### Demo Videos & Links: 
+
+### Inspiration
+
+### About the App  
+
+## Table of Contents
+
+# Installation
+
+# Features
+
+# Team
+
+### `Adam Nugroho`
+
+### `Fawwaz Firdaus`
+
+### `Sungmin Park`
+
+### `Vinica Ng`
+
+# Tech-Stack
+
+- [Flutter](https://flutter.dev/)
+- [Firebase](https://firebase.google.com/)
+
 ## Slack Channel
 `#`[IndoKore](https://opportunity-hack.slack.com/app_redirect?channel=IndoKore)
 
