@@ -1,7 +1,9 @@
 // Customers.js
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from './Navbar';
+import db from '../firebase';
+
 import './styles/Customers.css';
 
 function Customers() {
@@ -172,7 +174,23 @@ function Customers() {
           militaryBranch: 'Marines'
         }
       ];
-  const [customers, setCustomers] = useState(customersData); 
+  //const [customers, setCustomers] = useState(customersData); 
+  const [customers, setCustomers] = useState([]);
+
+  useEffect(() => {
+    const unsubscribe = db.collection('customers')
+      .onSnapshot(snapshot => {
+        const data = snapshot.docs.map(doc => ({
+          id: doc.id,
+          ...doc.data()
+        }));
+        
+        setCustomers(data);
+      });
+
+    return unsubscribe;
+  }, []);
+
 
   return (
     <div>
