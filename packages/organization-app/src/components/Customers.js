@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Navbar from './Navbar';
-import db from '../firebase';
+import db from '../firebase';  // Import functions from firebase.js
 
 import './styles/Customers.css';
 import EmailButton from './EmailButton';  // Adjust the path if necessary
