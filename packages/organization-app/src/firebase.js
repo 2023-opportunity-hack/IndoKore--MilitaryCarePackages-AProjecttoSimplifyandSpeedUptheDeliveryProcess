@@ -12,4 +12,3 @@ const db = getFirestore(app);
 const functions = getFunctions(app);  // Initialize Firebase Functions
 
 export { db, functions };  // Export both Firestore and Functions
-
