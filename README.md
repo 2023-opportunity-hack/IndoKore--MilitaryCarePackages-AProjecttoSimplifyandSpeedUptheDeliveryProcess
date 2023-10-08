@@ -12,8 +12,11 @@ Being able to give back to the incredible family that has been protecting our co
 
 We created two different web apps for Blue Star and the customer. 
 
+
+For the organization side:
 Blue Star web app: https://blue-star.web.app/ 
 
+For the care package request:
 Customer web app: https://blue-star-mothers.web.app/
 
 ## Problem Statement
