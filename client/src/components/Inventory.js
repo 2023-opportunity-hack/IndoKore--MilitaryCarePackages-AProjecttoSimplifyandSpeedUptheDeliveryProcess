@@ -8,7 +8,7 @@ function Inventory() {
   const [items, setItems] = useState([
     { 
       name: 'Socks',
-      inventory: 50,
+      inventory: 60,
       demand: 100
     },{
         name: 'Shampoo',

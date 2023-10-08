@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Homepage from './components/HomePage';
 import Inventory from './components/Inventory';
 import Customers from './components/Customers';
-import Shipments from './components/Timeline';
+import Shipments from './components/Shipments';
 import Timeline from './components/Timeline';
 
 function App() {

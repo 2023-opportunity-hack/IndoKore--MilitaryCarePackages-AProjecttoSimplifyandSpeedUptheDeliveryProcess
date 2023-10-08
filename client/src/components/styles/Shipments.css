@@ -1,0 +1,278 @@
+.SHIPMENT {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.SHIPMENT .overlap-group-wrapper {
+  background-color: #ffffff;
+  height: 1080px;
+  width: 1920px;
+}
+
+.SHIPMENT .overlap-group {
+  height: 1080px;
+  position: relative;
+}
+
+.SHIPMENT .data {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 1080px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1920px;
+}
+
+.SHIPMENT .title {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 10px;
+  height: 147px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.SHIPMENT .text-wrapper {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.SHIPMENT .table {
+  align-items: flex-start;
+  display: flex;
+  height: 767px;
+  position: relative;
+  width: 1579px;
+}
+
+.SHIPMENT .name {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 442px;
+}
+
+.SHIPMENT .header-cell {
+  align-items: center;
+  align-self: stretch;
+  background-color: #6a8fef;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #6e6d6d;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  padding: 0px 10px;
+  position: relative;
+  width: 100%;
+}
+
+.SHIPMENT .text {
+  align-self: stretch;
+  color: #000000;
+  flex: 1;
+  font-family: "Inter", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+}
+
+.SHIPMENT .item-cell {
+  align-items: center;
+  align-self: stretch;
+  background-color: #dfe9ef;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #6e6d6d;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  padding: 0px 10px;
+  position: relative;
+  width: 100%;
+}
+
+.SHIPMENT .package-type {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 352px;
+}
+
+.SHIPMENT .service-type {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 375px;
+}
+
+.SHIPMENT .package-weight {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 309px;
+}
+
+.SHIPMENT .status {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+}
+
+.SHIPMENT .header {
+  align-self: stretch;
+  background-color: #6a8fef;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #6e6d6d;
+  flex: 1;
+  flex-grow: 1;
+  position: relative;
+  width: 100%;
+}
+
+.SHIPMENT .checkbox-wrapper {
+  align-items: center;
+  align-self: stretch;
+  background-color: #dfe9ef;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #6e6d6d;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 0px 10px;
+  position: relative;
+  width: 100%;
+}
+
+.SHIPMENT .icon-instance-node {
+  flex: 0 0 auto !important;
+  height: 47.69px !important;
+  position: relative !important;
+}
+
+.SHIPMENT .back-button {
+  all: unset;
+  align-items: flex-start;
+  background-color: #d1d1d1;
+  border-radius: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 54px;
+  left: 114px;
+  padding: 0px 16px;
+  position: absolute;
+  top: 961px;
+  width: 192px;
+}
+
+.SHIPMENT .div-wrapper {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.SHIPMENT .div {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -2px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.SHIPMENT .edit-button {
+  all: unset;
+  align-items: flex-start;
+  background-color: #d1d1d1;
+  border-radius: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 54px;
+  left: 1518px;
+  padding: 0px 16px;
+  position: absolute;
+  top: 961px;
+  width: 262px;
+}
+
+.SHIPMENT .generate-label {
+  align-items: flex-start;
+  background-color: #d1d1d1;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 54px;
+  left: 1179px;
+  padding: 0px 16px;
+  position: absolute;
+  top: 961px;
+  width: 266px;
+}
+
+.SHIPMENT .text-wrapper-2 {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: -1.5px;
+  margin-right: -1.5px;
+  margin-top: -2px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
