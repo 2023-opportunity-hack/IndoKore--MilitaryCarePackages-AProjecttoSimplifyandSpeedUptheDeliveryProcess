@@ -1,19 +1,36 @@
-// src/components/HomePage.js
+// Homepage component
 
-import React from 'react';
+import { Link } from 'react-router-dom';
+import './styles/Homepage.css';
+import Navbar from './Navbar.js';
 
-function HomePage() {
+export default function Homepage() {
+
+  const nextShipmentDate = 'March 15, 2023';
+
   return (
-    <div className="home-page">
-      <h1>Blue Star Mothers</h1>
-      <div className="buttons">
-        <button>Button 1</button>
-        <button>Button 2</button>
-        <button>Button 3</button>
-        <button>Button 4</button>
-      </div>
+    <div>
+      <Navbar />
+      <h1>Next Shipment Date: {nextShipmentDate}</h1>
+      <div className="button-container">
+      <Link to="/inventory">
+        <button className="button">Inventory & Demand</button>
+      </Link>
+
+      <Link to="/customers">
+        <button className="button">Customer Data</button>
+      </Link>
+
+      <Link to="/shipments">  
+        <button className="button">Shipments</button>
+      </Link>
+
+      <Link to="/timeline">
+        <button className="button">Timeline</button>
+      </Link>
+</div>
     </div>
   );
+
 }
 
-export default HomePage;

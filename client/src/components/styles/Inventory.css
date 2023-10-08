@@ -1,0 +1,45 @@
+/* Inventory.css */
+
+.item {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .item h2 {
+    font-size: 24px; 
+    margin-bottom: 10px;
+  }
+  
+  .item p {
+    font-weight: bold;
+  }
+  
+  progress {
+    width: 100%;
+    height: 20px;
+  }
+  
+  progress[value]::-webkit-progress-bar {
+    background-color: #eee; 
+    border-radius: 5px;
+  } 
+  
+  progress[value]::-webkit-progress-value {
+    background-color: #0a0; 
+    border-radius: 5px; 
+  }
+  
+  /* Make progress bar red if value below max */ 
+  progress[value]::-webkit-progress-value {
+    background-color: #a00;
+  }
+  
+  .add-item-btn {
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
