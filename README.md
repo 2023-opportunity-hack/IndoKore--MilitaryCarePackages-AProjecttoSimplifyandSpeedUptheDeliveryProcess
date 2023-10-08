@@ -27,9 +27,6 @@ Repository | Github
 ## Database Scheme
 
 
-## REST APIs
-
-
 ## Challenges
 
 
