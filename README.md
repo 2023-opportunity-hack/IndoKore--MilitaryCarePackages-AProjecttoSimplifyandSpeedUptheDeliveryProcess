@@ -37,7 +37,7 @@ Repository | Github
 
 
 ## Creator
-- @Adam Nugroho (on Slack)
+- @Adam Nugroho
 - @Fawwaz Firdaus
 - @SungMin Park
 - @Vinica Ng
