@@ -12,6 +12,9 @@ IndoKore
 
 ## Creator
 @Adam Nugroho (on Slack)
+@Fawwaz Firdaus
+@SungMin Park
+@Vinica Ng
 
 ## Your next steps
 1. ✅ Add everyone to your GitHub repo like this: https://opportunity-hack.slack.com/archives/C1Q6YHXQU/p1605657678139600
