@@ -1,7 +1,9 @@
 // Shipments.js
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import './styles/Shipments.css';
+import db from '../firebase';
+
 
 
 function Shipments() {
@@ -32,7 +34,44 @@ function Shipments() {
         },
         // etc
       ]
-  const [shipments, setShipments] = useState(shipmentsArr);
+ // const [shipments, setShipments] = useState(shipmentsArr);
+ const [shipments, setShipments] = useState([]);
+
+ useEffect(() => {
+    const unsubscribe = db.collection('customers')
+      .onSnapshot(snapshot => {
+        const data = snapshot.docs.map(doc => ({
+          id: doc.id,
+          ...doc.data()
+        }));
+
+        data.forEach(shipment => {
+
+            const packageType = shipment.packageType.toLowerCase();
+
+
+            if(packageType === 'feminine') {
+              shipment.weight = 5;
+              shipment.serviceType = 'Priority';
+            } else if(packageType === 'masculine') {
+              shipment.weight = 6;
+              shipment.serviceType = 'Priority'; 
+            } else if(packageType === 'girl scout cookies') {
+              shipment.weight = 3;
+              shipment.serviceType = 'Express';
+            }
+            else if(packageType === 'others') {
+                shipment.weight = 8;
+                shipment.serviceType = 'Ground';
+              }
+          });
+  
+          setShipments(data);
+        });
+      
+      return unsubscribe;
+  
+    }, []);
 
   return (
     <div>

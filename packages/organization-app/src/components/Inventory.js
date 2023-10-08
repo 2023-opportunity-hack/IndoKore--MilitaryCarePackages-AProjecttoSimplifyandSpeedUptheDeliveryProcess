@@ -1,10 +1,12 @@
 // Inventory.js
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './styles/Inventory.css';
 import Navbar from './Navbar';
-function Inventory() {
+import db from '../firebase';
 
+function Inventory() {
+/*
   const [items, setItems] = useState([
     { 
       name: 'Socks',
@@ -43,11 +45,30 @@ function Inventory() {
       // etc
     // other items
   ]);
+*/
 
-  function addItem(name, inventory, demand) {
+const [items, setItems] = useState([]);
+
+useEffect(() => {
+  const unsubscribe = db.collection('inventory')
+    .onSnapshot(snapshot => {
+      const data = snapshot.docs.map(doc => ({
+        id: doc.id,
+        ...doc.data()  
+      }));
+      
+      setItems(data);
+    });
+
+  return unsubscribe;
+
+}, []);
+
+
+  function addItem(itemName, quantity, demand) {
     setItems([
       ...items,
-      {name, inventory, demand}  
+      {itemName, quantity, demand}  
     ]);
   }
 
@@ -55,20 +76,38 @@ function Inventory() {
     <div>
     <Navbar />
       {items.map(item => (
-        <div key={item.name}>
-          <h2>{item.name}</h2>
-          <p>{item.inventory}/{item.demand}</p>
+        <div key={item.itemName}>
+          <h2>{item.itemName}</h2>
+          <p>{item.quantity}/{item.demand}</p>
           
           <progress className="progress-bar"
-            value={item.inventory} 
+            value={item.quantity} 
             max={item.demand}
           />
         </div>
       ))}
 
-      <button onClick={() => addItem(/* show form */)}>
-        Add Item  
-      </button>
+<button onClick={() => setShowModal(true)}>Add Item</button>
+{showModal && (
+        <Modal>
+          <form
+            onSubmit={e => {
+              e.preventDefault();
+              addItem(getFormData());
+              setShowModal(false);
+            }}
+          >
+            <label>
+              Name:
+              <input name="name"/> 
+            </label>
+
+            // other inputs 
+
+            <button type="submit">Add</button>
+          </form>
+        </Modal>
+      )}
 
     </div>
   );
