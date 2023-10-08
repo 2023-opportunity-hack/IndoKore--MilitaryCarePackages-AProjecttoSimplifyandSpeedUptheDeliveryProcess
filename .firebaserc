@@ -1,5 +1,18 @@
 {
   "projects": {
     "default": "blue-star-mothers"
-  }
+  },
+  "targets": {
+    "blue-star-mothers": {
+      "hosting": {
+        "customer": [
+          "packages/customer-input-app"
+        ],
+        "organization": [
+          "packages/organization-app"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

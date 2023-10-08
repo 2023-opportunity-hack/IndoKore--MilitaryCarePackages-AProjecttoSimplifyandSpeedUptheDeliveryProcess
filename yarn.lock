@@ -4095,7 +4095,7 @@ csstype@^3.0.2:
   resolved "https://registry.npmjs.org/csstype/-/csstype-3.1.2.tgz"
   integrity sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==
 
-"customer-input-app@file:C:\\Users\\adami\\proHack\\IndoKore--MilitaryCarePackages-AProjecttoSimplifyandSpeedUptheDeliveryProcess\\packages\\customer-input-app":
+"customer-input-app@file:/Users/fawwaz/Developer/BlueStarMothersProject/packages/customer-input-app":
   version "0.1.0"
   resolved "file:packages/customer-input-app"
   dependencies:
@@ -5144,7 +5144,7 @@ find-up@^5.0.0:
     locate-path "^6.0.0"
     path-exists "^4.0.0"
 
-firebase@^10.4.0:
+firebase@^10.4.0, firebase@^9.0.0, "firebase@^9.0.0 || ^10.0.0":
   version "10.4.0"
   resolved "https://registry.npmjs.org/firebase/-/firebase-10.4.0.tgz"
   integrity sha512-3Z8WsNwA7kbcKGZ+nrTZ/ES518pk0K440ZJYD8nUNKN5hV6ll+unhUw30t1msedN6yIFjhsC/9OwT4Z0ohwO2w==
@@ -5274,6 +5274,10 @@ fs.realpath@^1.0.0:
   resolved "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   integrity sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==
 
+fsevents@^2.3.2, fsevents@~2.3.2:
+  version "2.3.3"
+  resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz"
+  integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
 function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz"
@@ -7380,7 +7384,7 @@ optionator@^0.9.3:
     prelude-ls "^1.2.1"
     type-check "^0.4.0"
 
-"organization-app@file:C:\\Users\\adami\\proHack\\IndoKore--MilitaryCarePackages-AProjecttoSimplifyandSpeedUptheDeliveryProcess\\packages\\organization-app":
+"organization-app@file:/Users/fawwaz/Developer/BlueStarMothersProject/packages/organization-app":
   version "0.1.0"
   resolved "file:packages/organization-app"
   dependencies:
@@ -7392,6 +7396,7 @@ optionator@^0.9.3:
     react-dom "^18.2.0"
     react-router-dom "^6.16.0"
     react-scripts "^5.0.1"
+    reactfire "^4.2.3"
     web-vitals "^2.1.4"
 
 p-limit@^2.0.0, p-limit@^2.2.0:
@@ -8428,12 +8433,20 @@ react-scripts@^5.0.1, react-scripts@5.0.1:
   optionalDependencies:
     fsevents "^2.3.2"
 
-react@^18.0.0, react@^18.2.0, "react@>= 16", react@>=16.8:
+react@^18.0.0, react@^18.2.0, "react@>= 16", "react@>=16 || experimental", react@>=16.8:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
   dependencies:
     loose-envify "^1.1.0"
+
+reactfire@^4.2.3:
+  version "4.2.3"
+  resolved "https://registry.npmjs.org/reactfire/-/reactfire-4.2.3.tgz"
+  integrity sha512-FG75b586r8dId7EGIyVi/nKokth++BIvdRO1BRIBkM7BGe2v753olcNpUHBLGdBPap7t67vq2FA0P22Pu8rT3Q==
+  dependencies:
+    rxfire "^6.0.3"
+    rxjs "^6.6.3 || ^7.0.1"
 
 read-cache@^1.0.0:
   version "1.0.0"
@@ -8682,6 +8695,18 @@ run-parallel@^1.1.9:
   integrity sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==
   dependencies:
     queue-microtask "^1.2.2"
+
+rxfire@^6.0.3:
+  version "6.0.5"
+  resolved "https://registry.npmjs.org/rxfire/-/rxfire-6.0.5.tgz"
+  integrity sha512-ycBsANGbya3GNtOBKzZVATLEV+0S9gUrlTfwnN15TCXtgG8OgIMAuv2k9+kMeVaevp/DRp1KT+vYf6Wkop6gvw==
+
+"rxjs@^6.0.0 || ^7.0.0", "rxjs@^6.6.3 || ^7.0.1":
+  version "7.8.1"
+  resolved "https://registry.npmjs.org/rxjs/-/rxjs-7.8.1.tgz"
+  integrity sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg==
+  dependencies:
+    tslib "^2.1.0"
 
 safe-array-concat@^1.0.0, safe-array-concat@^1.0.1:
   version "1.0.1"
