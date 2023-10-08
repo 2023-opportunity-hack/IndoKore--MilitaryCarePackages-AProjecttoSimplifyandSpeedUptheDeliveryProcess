@@ -123,9 +123,9 @@ const CustomerForm = () => {
         required
       >
         <option value="">Select Package Type</option>
-        <option value="masculine">Masculine</option>
-        <option value="feminine">Feminine</option>
-        <option value="others">Others</option>
+        <option value="Masculine">Masculine</option>
+        <option value="Feminine">Feminine</option>
+        <option value="Others">Others</option>
       </select>
       <select
         name="branch"
@@ -134,11 +134,11 @@ const CustomerForm = () => {
         required
       >
         <option value="">Select Branch</option>
-        <option value="army">Army</option>
-        <option value="navy">Navy</option>
-        <option value="marine">Marine</option>
-        <option value="airforce">Airforce</option>
-        <option value="coastGuard">Coast Guard</option>
+        <option value="Army">Army</option>
+        <option value="Navy">Navy</option>
+        <option value="Marine">Marine</option>
+        <option value="Airforce">Airforce</option>
+        <option value="CoastGuard">Coast Guard</option>
       </select>
       <input type="submit" value="Submit" />
     </form>

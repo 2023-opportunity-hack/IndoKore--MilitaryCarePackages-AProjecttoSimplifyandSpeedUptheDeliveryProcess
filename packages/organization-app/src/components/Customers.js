@@ -216,7 +216,7 @@ function Customers() {
               <td>{customer.id}</td>
               <td>{customer.firstName}</td>
               <td>{customer.lastName}</td>
-              <td>{customer.militaryBranch}</td>
+              <td>{customer.branch}</td>
                 <td>{customer.address}</td>
           <td>{customer.city}</td>
           <td>{customer.state}</td>
