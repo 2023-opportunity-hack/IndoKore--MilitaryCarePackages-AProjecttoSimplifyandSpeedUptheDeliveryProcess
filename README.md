@@ -21,6 +21,21 @@ Database backend | Fire Base
 JavaScript framework | React
 Repository | Github
 
+## Overall Architecture
+
+
+## Database Scheme
+
+
+## REST APIs
+
+
+## Challenges
+
+
+## Future Enchacements
+
+
 ## Creator
 @Adam Nugroho (on Slack)
 @Fawwaz Firdaus
