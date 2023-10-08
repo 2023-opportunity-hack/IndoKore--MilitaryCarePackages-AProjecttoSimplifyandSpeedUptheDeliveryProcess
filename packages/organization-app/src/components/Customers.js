@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Navbar from './Navbar';
 import './styles/Customers.css';
+import EmailButton from './EmailButton';  // Adjust the path if necessary
 
 function Customers() {
     const customersData = [
@@ -208,6 +209,8 @@ function Customers() {
           ))}
         </tbody>
       </table>
+
+      <EmailButton />
 
       <button 
         className="edit-btn"
