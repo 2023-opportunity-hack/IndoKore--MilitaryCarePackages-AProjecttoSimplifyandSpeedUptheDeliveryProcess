@@ -51,6 +51,36 @@ function Inventory() {
 const [items, setItems] = useState([]);
 const [showModal, setShowModal] = useState(false);
 
+function handleFormSubmit(event) {
+  event.preventDefault();  // Prevents the default form submission behavior
+
+  const form = event.target;
+  const itemName = form.itemName.value;
+  const quantity = form.quantity.value;
+  const demand = form.demand.value;
+  const type = form.type.value;
+  
+  addItem(itemName, quantity, demand, type);
+
+  form.reset();  // Clears the form fields
+}
+
+function addItem(itemName, quantity, demand, type) {
+  db.collection('inventory').add({
+    itemName,
+    quantity: parseInt(quantity, 10),  // Convert quantity to a number
+    demand: parseInt(demand, 10),  // Convert demand to a number
+    type
+  })
+  .then((docRef) => {
+    console.log("Document written with ID: ", docRef.id);
+    setShowModal(false);  // Close the modal after successful addition
+  })
+  .catch((error) => {
+    console.error("Error adding document: ", error);
+  });
+}
+
 
 useEffect(() => {
   const unsubscribe = db.collection('inventory')
@@ -95,7 +125,7 @@ useEffect(() => {
 
       {showModal && (
         <Modal>
-          <form>
+          <form onSubmit={handleFormSubmit}>
             <label>
               Name:
               <input name="itemName" />
