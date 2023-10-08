@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Navbar from './Navbar';
 import "./styles/Shipments.css";
 import { Checkbox } from "./icons/Checkbox";
 import { Checkbox1 } from "./icons/Checkbox1";
@@ -11,6 +12,7 @@ export const Shipments = () => {
   return (
     <div className="SHIPMENT">
       <div className="overlap-group-wrapper">
+      <Navbar />
         <div className="overlap-group">
           <div className="data">
             <div className="title">

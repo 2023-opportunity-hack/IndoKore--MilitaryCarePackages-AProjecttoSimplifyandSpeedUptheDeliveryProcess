@@ -1,0 +1,523 @@
+.timeline {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .timeline .div {
+    background-color: #ffffff;
+    height: 1080px;
+    position: relative;
+    width: 1920px;
+  }
+  
+  .timeline .overlap {
+    height: 347px;
+    left: 0;
+    position: absolute;
+    top: 26px;
+    width: 1920px;
+  }
+  
+  .timeline .overlap-group {
+    height: 347px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1920px;
+  }
+  
+  .timeline .line {
+    height: 4px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 113px;
+    width: 1920px;
+  }
+  
+  .timeline .text-wrapper {
+    color: #000000;
+    font-family: "Literata", Helvetica;
+    font-size: 50px;
+    font-weight: 700;
+    height: 74px;
+    left: 797px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 40px;
+  }
+  
+  .timeline .restock {
+    background-color: #d9d9d9;
+    border-radius: 50px;
+    height: 100px;
+    left: 1185px;
+    position: absolute;
+    top: 247px;
+    width: 100px;
+  }
+  
+  .timeline .text-wrapper-2 {
+    color: #000000;
+    font-family: "Literata", Helvetica;
+    font-size: 36px;
+    font-weight: 400;
+    height: 191px;
+    left: 1003px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 154px;
+    width: 463px;
+  }
+  
+  .timeline .text-wrapper-3 {
+    color: #000000;
+    font-family: "Literata", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 37px;
+    left: 1138px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 196px;
+  }
+  
+  .timeline .data-collection {
+    background-color: #d9d9d9;
+    border-radius: 50px;
+    height: 100px;
+    left: 257px;
+    position: absolute;
+    top: 247px;
+    width: 100px;
+  }
+  
+  .timeline .last-chance-to {
+    background-color: #d9d9d9;
+    border-radius: 50px;
+    height: 100px;
+    left: 719px;
+    position: absolute;
+    top: 247px;
+    width: 100px;
+  }
+  
+  .timeline .prepare-packages {
+    background-color: #d9d9d9;
+    border-radius: 50px;
+    height: 100px;
+    left: 1648px;
+    position: absolute;
+    top: 247px;
+    width: 100px;
+  }
+  
+  .timeline .img {
+    height: 1px;
+    left: 372px;
+    object-fit: cover;
+    position: absolute;
+    top: 296px;
+    width: 70px;
+  }
+  
+  .timeline .line-2 {
+    height: 1px;
+    left: 629px;
+    object-fit: cover;
+    position: absolute;
+    top: 296px;
+    width: 70px;
+  }
+  
+  .timeline .line-3 {
+    height: 1px;
+    left: 544px;
+    object-fit: cover;
+    position: absolute;
+    top: 296px;
+    width: 70px;
+  }
+  
+  .timeline .line-4 {
+    height: 1px;
+    left: 458px;
+    object-fit: cover;
+    position: absolute;
+    top: 296px;
+    width: 70px;
+  }
+  
+  .timeline .line-wrapper {
+    background-image: url(https://cdn.animaapp.com/projects/6521e77762f75e9352093c93/releases/6522df2e80e7b7946a1dfc7a/img/line-14.svg);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 1px;
+    left: 838px;
+    position: absolute;
+    top: 296px;
+    width: 70px;
+  }
+  
+  .timeline .line-5 {
+    height: 1px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 70px;
+  }
+  
+  .timeline .img-wrapper {
+    background-image: url(https://cdn.animaapp.com/projects/6521e77762f75e9352093c93/releases/6522df2e80e7b7946a1dfc7a/img/line-14.svg);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 1px;
+    left: 1095px;
+    position: absolute;
+    top: 296px;
+    width: 70px;
+  }
+  
+  .timeline .overlap-2 {
+    background-image: url(https://cdn.animaapp.com/projects/6521e77762f75e9352093c93/releases/6522df2e80e7b7946a1dfc7a/img/line-14.svg);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 1px;
+    left: 1010px;
+    position: absolute;
+    top: 296px;
+    width: 70px;
+  }
+  
+  .timeline .overlap-3 {
+    background-image: url(https://cdn.animaapp.com/projects/6521e77762f75e9352093c93/releases/6522df2e80e7b7946a1dfc7a/img/line-14.svg);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 1px;
+    left: 924px;
+    position: absolute;
+    top: 296px;
+    width: 70px;
+  }
+  
+  .timeline .overlap-4 {
+    background-image: url(https://cdn.animaapp.com/projects/6521e77762f75e9352093c93/releases/6522df2e80e7b7946a1dfc7a/img/line-14.svg);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 1px;
+    left: 1301px;
+    position: absolute;
+    top: 296px;
+    width: 70px;
+  }
+  
+  .timeline .overlap-5 {
+    background-image: url(https://cdn.animaapp.com/projects/6521e77762f75e9352093c93/releases/6522df2e80e7b7946a1dfc7a/img/line-14.svg);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 1px;
+    left: 1558px;
+    position: absolute;
+    top: 296px;
+    width: 70px;
+  }
+  
+  .timeline .overlap-6 {
+    background-image: url(https://cdn.animaapp.com/projects/6521e77762f75e9352093c93/releases/6522df2e80e7b7946a1dfc7a/img/line-14.svg);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 1px;
+    left: 1473px;
+    position: absolute;
+    top: 296px;
+    width: 70px;
+  }
+  
+  .timeline .overlap-7 {
+    background-image: url(https://cdn.animaapp.com/projects/6521e77762f75e9352093c93/releases/6522df2e80e7b7946a1dfc7a/img/line-14.svg);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 1px;
+    left: 1387px;
+    position: absolute;
+    top: 296px;
+    width: 70px;
+  }
+  
+  .timeline .text-wrapper-4 {
+    color: #000000;
+    font-family: "Literata", Helvetica;
+    font-size: 40px;
+    font-weight: 400;
+    height: 59px;
+    left: 161px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 131px;
+  }
+  
+  .timeline .p {
+    color: #000000;
+    font-family: "Literata", Helvetica;
+    font-size: 36px;
+    font-weight: 400;
+    height: 106px;
+    left: 587px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 85px;
+    width: 363px;
+  }
+  
+  .timeline .text-wrapper-5 {
+    color: #000000;
+    font-family: "Literata", Helvetica;
+    font-size: 40px;
+    font-weight: 400;
+    height: 59px;
+    left: 1535px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 151px;
+  }
+  
+  .timeline .text-wrapper-6 {
+    color: #000000;
+    font-family: "Literata", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 37px;
+    left: 210px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 190px;
+  }
+  
+  .timeline .text-wrapper-7 {
+    color: #000000;
+    font-family: "Literata", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 37px;
+    left: 671px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 205px;
+  }
+  
+  .timeline .text-wrapper-8 {
+    color: #000000;
+    font-family: "Literata", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 37px;
+    left: 1599px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 199px;
+  }
+  
+  .timeline .ship-through-USPS {
+    background-color: #d9d9d9;
+    border-radius: 50px;
+    height: 100px;
+    left: 1648px;
+    position: absolute;
+    top: 785px;
+    width: 100px;
+  }
+  
+  .timeline .order-arrived {
+    background-color: #d9d9d9;
+    border-radius: 50px;
+    height: 100px;
+    left: 1185px;
+    position: absolute;
+    top: 785px;
+    width: 100px;
+  }
+  
+  .timeline .overlap-8 {
+    background-image: url(https://cdn.animaapp.com/projects/6521e77762f75e9352093c93/releases/6522df2e80e7b7946a1dfc7a/img/line-14.svg);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 1px;
+    left: 1309px;
+    position: absolute;
+    top: 842px;
+    width: 70px;
+  }
+  
+  .timeline .overlap-9 {
+    background-image: url(https://cdn.animaapp.com/projects/6521e77762f75e9352093c93/releases/6522df2e80e7b7946a1dfc7a/img/line-14.svg);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 1px;
+    left: 1566px;
+    position: absolute;
+    top: 842px;
+    width: 70px;
+  }
+  
+  .timeline .overlap-10 {
+    background-image: url(https://cdn.animaapp.com/projects/6521e77762f75e9352093c93/releases/6522df2e80e7b7946a1dfc7a/img/line-14.svg);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 1px;
+    left: 1481px;
+    position: absolute;
+    top: 842px;
+    width: 70px;
+  }
+  
+  .timeline .overlap-11 {
+    background-image: url(https://cdn.animaapp.com/projects/6521e77762f75e9352093c93/releases/6522df2e80e7b7946a1dfc7a/img/line-14.svg);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 1px;
+    left: 1395px;
+    position: absolute;
+    top: 842px;
+    width: 70px;
+  }
+  
+  .timeline .overlap-12 {
+    background-image: url(https://cdn.animaapp.com/projects/6521e77762f75e9352093c93/releases/6522df2e80e7b7946a1dfc7a/img/line-42.svg);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 80px;
+    left: 1698px;
+    position: absolute;
+    top: 680px;
+    width: 1px;
+  }
+  
+  .timeline .line-6 {
+    height: 80px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 1px;
+  }
+  
+  .timeline .overlap-13 {
+    background-image: url(https://cdn.animaapp.com/projects/6521e77762f75e9352093c93/releases/6522df2e80e7b7946a1dfc7a/img/line-42.svg);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 80px;
+    left: 1698px;
+    position: absolute;
+    top: 387px;
+    width: 1px;
+  }
+  
+  .timeline .overlap-14 {
+    background-image: url(https://cdn.animaapp.com/projects/6521e77762f75e9352093c93/releases/6522df2e80e7b7946a1dfc7a/img/line-42.svg);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 80px;
+    left: 1698px;
+    position: absolute;
+    top: 484px;
+    width: 1px;
+  }
+  
+  .timeline .overlap-15 {
+    background-image: url(https://cdn.animaapp.com/projects/6521e77762f75e9352093c93/releases/6522df2e80e7b7946a1dfc7a/img/line-42.svg);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 80px;
+    left: 1698px;
+    position: absolute;
+    top: 582px;
+    width: 1px;
+  }
+  
+  .timeline .image {
+    height: 363px;
+    left: 162px;
+    object-fit: cover;
+    position: absolute;
+    top: 603px;
+    width: 370px;
+  }
+  
+  .timeline .text-wrapper-9 {
+    color: #000000;
+    font-family: "Literata", Helvetica;
+    font-size: 40px;
+    font-weight: 400;
+    height: 59px;
+    left: 1517px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 900px;
+  }
+  
+  .timeline .text-wrapper-10 {
+    color: #000000;
+    font-family: "Literata", Helvetica;
+    font-size: 40px;
+    font-weight: 400;
+    height: 59px;
+    left: 1102px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 900px;
+  }
+  
+  .timeline .text-wrapper-11 {
+    color: #000000;
+    font-family: "Literata", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 37px;
+    left: 1598px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 964px;
+  }
+  
+  .timeline .text-wrapper-12 {
+    color: #000000;
+    font-family: "Literata", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 37px;
+    left: 1131px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 964px;
+  }
+  

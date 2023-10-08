@@ -1,45 +1,78 @@
 /* Inventory.css */
 
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: left;
+  padding: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Item Styles */
 .item {
-    margin: 20px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
-  
-  .item h2 {
-    font-size: 24px; 
-    margin-bottom: 10px;
-  }
-  
-  .item p {
-    font-weight: bold;
-  }
-  
-  progress {
-    width: 100%;
-    height: 20px;
-  }
-  
-  progress[value]::-webkit-progress-bar {
-    background-color: #eee; 
-    border-radius: 5px;
-  } 
-  
-  progress[value]::-webkit-progress-value {
-    background-color: #0a0; 
-    border-radius: 5px; 
-  }
-  
-  /* Make progress bar red if value below max */ 
-  progress[value]::-webkit-progress-value {
-    background-color: #a00;
-  }
-  
-  .add-item-btn {
-    padding: 10px 20px;
-    background: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item h2 {
+  font-size: 24px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.item p {
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Progress Bar Styles */
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.progress-bar::-webkit-progress-bar {
+  background-color: #a00;
+}
+
+.progress-bar::-webkit-progress-value {
+  background-color: #a00;
+}
+
+/* Red Progress Bar (if below max) */
+.progress-bar[value]::-webkit-progress-value {
+  background-color: #0a0;
+}
+
+/* Add Item Button Styles */
+.add-item-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-item-btn:hover {
+  background-color: #0056b3;
+}

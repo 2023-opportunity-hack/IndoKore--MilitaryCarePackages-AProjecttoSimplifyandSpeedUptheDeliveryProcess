@@ -56,9 +56,7 @@
 .SHIPMENT .table {
   align-items: flex-start;
   display: flex;
-  height: 767px;
-  position: relative;
-  width: 1579px;
+  flex-wrap: wrap;
 }
 
 .SHIPMENT .name {
@@ -275,4 +273,14 @@
   text-align: center;
   white-space: nowrap;
   width: fit-content;
+}
+
+.SHIPMENT .name,
+.SHIPMENT .package-type,
+.SHIPMENT .service-type,
+.SHIPMENT .package-weight,
+.SHIPMENT .status {
+  flex-basis: 20%; /* Adjust this value based on your desired column distribution */
+  flex-grow: 1; /* Allow columns to grow equally */
+  max-width: 20%; /* Set a maximum width for each column */
 }

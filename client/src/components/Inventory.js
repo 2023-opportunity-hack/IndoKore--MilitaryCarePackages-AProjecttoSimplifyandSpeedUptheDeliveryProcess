@@ -3,8 +3,8 @@
 import { useState } from 'react';
 import './styles/Inventory.css';
 import Navbar from './Navbar';
-function Inventory() {
 
+function Inventory() {
   const [items, setItems] = useState([
     { 
       name: 'Socks',
@@ -40,38 +40,37 @@ function Inventory() {
         inventory: 200,
         demand: 300
       },
-      // etc
-    // other items
-  ]);
+      // Add more items as needed
+    ]);
 
   function addItem(name, inventory, demand) {
     setItems([
       ...items,
-      {name, inventory, demand}  
+      { name, inventory, demand }
     ]);
   }
 
   return (
-    <div>
-    <Navbar />
+    <div className="container">
+      <Navbar />
       {items.map(item => (
-        <div key={item.name}>
+        <div key={item.name} className="item">
           <h2>{item.name}</h2>
           <p>{item.inventory}/{item.demand}</p>
           
-          <progress className="progress-bar"
-            value={item.inventory} 
+          <progress
+            className="progress-bar"
+            value={item.inventory}
             max={item.demand}
           />
         </div>
       ))}
 
-      <button onClick={() => addItem(/* show form */)}>
-        Add Item  
+      <button className="add-item-btn" onClick={() => addItem(/* show form */)}>
+        Add Item
       </button>
-
     </div>
   );
-
 }
+
 export default Inventory;

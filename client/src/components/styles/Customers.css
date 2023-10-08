@@ -4,50 +4,49 @@
 /* Table Styles */
 
 table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  thead th {
-    background: #555;
-    color: white;
-    padding: 10px;
-  }
-  
-  th, td {
-    text-align: left;
-    padding: 10px;
-  }
-  
-  tr:nth-child(even) {
-    background: #eee;
-  }
-  
-  tbody tr:hover {
-    background: #ddd;
-  }
-  
-  /* Scrollbar Styling 
-  
-  tbody {
-    display: block; 
-    height: 300px;
-    overflow-y: scroll;
-  }
-  
-  tbody tr {
-    width: 100%;
-    table-layout: fixed;
-  }
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead th {
+  background: #6a8fef;
+  color: white;
+  padding: 10px;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background: #eee;
+}
+
+tbody tr:hover {
+  background: #ddd;
+}
+
+/* Scrollbar Styling 
+tbody {
+  display: block;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+tbody tr {
+  width: 100%;
+  table-layout: fixed;
+}
 */
+
 .edit-btn {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-  
-    background: blue;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-  }
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
