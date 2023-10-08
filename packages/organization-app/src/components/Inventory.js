@@ -87,9 +87,27 @@ useEffect(() => {
         </div>
       ))}
 
-      <button onClick={() => addItem(/* show form */)}>
-        Add Item  
-      </button>
+<button onClick={() => setShowModal(true)}>Add Item</button>
+{showModal && (
+        <Modal>
+          <form
+            onSubmit={e => {
+              e.preventDefault();
+              addItem(getFormData());
+              setShowModal(false);
+            }}
+          >
+            <label>
+              Name:
+              <input name="name"/> 
+            </label>
+
+            // other inputs 
+
+            <button type="submit">Add</button>
+          </form>
+        </Modal>
+      )}
 
     </div>
   );
